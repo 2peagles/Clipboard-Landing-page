@@ -25,12 +25,13 @@ h1{
 }
 h2, h3, h4{
   font-size: 32px;
+  margin: 0 auto;
 }
 h1, h2, h3, h4, #sectiontwo-list > li{
   color:var(--DarkGrayishBlue);
   font-weight: 600;
   padding:0;
-  margin:0;
+  margin: 0 auto;
 }
 p , ol li, button{
   color:var(--GrayishBlue);
@@ -42,7 +43,7 @@ p , ol li, button{
 }
 
 header {
-  padding-top: 5rem;
+  padding-top: 8rem;
   min-height: 50vh;
   width:100%;
   background-size:cover;
@@ -62,6 +63,7 @@ button{
   background-color:var(--StrongCyan);
 }
 #btnios:hover{
+  transition: 0.4s;
   filter: sepia(20%);
   background-color: var(--StrongCyan);
   box-shadow: 1px 2px 5px 5px var(--StrongCyan);
@@ -70,26 +72,30 @@ button{
   color:var(--White);
   background-color:var(--LightBlue);
 }
-#btnmac:hover:focus{
+#btnmac:hover{
+  transition: 0.4s;
   filter: sepia(20%);
   box-shadow: 1px 2px 5px 5px var(--LightBlue);
 }
 .sectiontwo-begin-content{
-  padding-bottom: 7rem;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .leftimg{
   float:left;
-  margin:-75px;
+  margin-left:-75px;
 }
 #sectiontwo ol { 
   float:right;
   width:400px;
   text-align: left;
+  margin:0;
+  padding:0;
   /* padding-right:20rem; */
 }
 #sectiontwo li {
   text-align: left;
-  /* padding-right: 200px; */
+  line-height: 2.5rem;
 }
 #sectiontwo-list{
   padding: 3rem 15rem 3rem 0;
@@ -144,16 +150,12 @@ footer li:hover, footer svg:hover {
   text-align: left;
   line-height: 3rem;
 }
-.logo{
-  font-size: 1rem;
-  width:100px;
-}
-.logo {
-  width:100px;
-  height:75px;
+.footer-logo {
+  font-size: 100px;
+  width: 2em;
 }
 #social-icons svg > path:hover{
-/* color:var(--StrongCyan); */
+transition: 0.4s;
 fill:var(--StrongCyan);
 }
 ol, li{
@@ -161,11 +163,23 @@ ol, li{
   margin:0;
   list-style-type: none;
 }
-
+@media  screen and (min-width:1450px) {
+  .respon { 
+    margin-right:20rem;
+    padding-right:10rem;
+  }
+  #sectiontwo , #sectionthree {
+    margin:5rem 0;
+  }
+  #sectionfour, #sectionfive{
+    margin:4rem ;
+  }
+}
 @media screen and (max-width:500px) {
   header p, #sectiontwo p, #sectionthree p , #sectionfour p, #sectionfive p{
     width:320px;
     padding:1rem 0;
+
     }
   h1{
     font-size: 32px;
@@ -197,13 +211,15 @@ ol, li{
   #sectiontwo ol {
     float:none;
     width:320px;
+    padding:0;
+    margin:0 auto;
   }
   #sectiontwo li {
     text-align: center;
     padding:.5rem;
   }
   #sectiontwo-list{
-    padding: 3rem 0rem 0rem 0;
+    padding: 3rem 0;
   }
   #sectionthree ol{
     columns: 1;
@@ -227,6 +243,10 @@ ol, li{
     display: block;
     margin-top:5rem;
     padding: 1rem   2rem;
+  }
+  .footer-logo {
+    font-size: 100px;
+    width: 100%;
   }
   footer ol li{
     display: block;
