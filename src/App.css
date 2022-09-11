@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+:root {
+  --StrongCyan: hsl(171, 66%, 44%);
+  --LightBlue: hsl(233, 100%, 69%);
+  --HoverLightBlue: hsla(233, 100%, 69%);
+  --DarkGrayishBlue: hsl(210, 10%, 33%);
+  --GrayishBlueBackground: hsla(201, 11%, 66%, 0.1);
+  --GrayishBlue: hsl(201, 11%, 66%);
+  --White:#fff;
+  --Black:#000;
+}
+/* *{
+  border:5px solid black;
+} */
+.App{
+  display: flex;
+  display: block;
+  align-items: center;
+  text-align:center;
+  font-family: 'Bai Jamjuree', sans-serif;
+  justify-content: center;
+}
+h1{
+  font-size: 52px;
+}
+h2, h3, h4{
+  font-size: 32px;
+}
+h1, h2, h3, h4, #sectiontwo-list > li{
+  color:var(--DarkGrayishBlue);
+  font-weight: 600;
+  padding:0;
+  margin:0;
+}
+p , ol li, button{
+  color:var(--GrayishBlue);
+  line-height: 1.7rem;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin:0 auto;
+}
+
+header {
+  padding-top: 5rem;
+  min-height: 50vh;
+  width:100%;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-image: url('Images/bg-header-desktop.png ') ;
+}
+
+button{
+  border:none;
+  cursor: pointer;
+  margin: 0 10px 25px;
+  padding:10px 30px;
+  border-radius: 10rem;
+} 
+#btnios{
+  color:var(--White);
+  background-color:var(--StrongCyan);
+}
+#btnios:hover{
+  filter: sepia(20%);
+  background-color: var(--StrongCyan);
+  box-shadow: 1px 2px 5px 5px var(--StrongCyan);
+}
+#btnmac{
+  color:var(--White);
+  background-color:var(--LightBlue);
+}
+#btnmac:hover:focus{
+  filter: sepia(20%);
+  box-shadow: 1px 2px 5px 5px var(--LightBlue);
+}
+.sectiontwo-begin-content{
+  padding-bottom: 7rem;
+}
+.leftimg{
+  float:left;
+  margin:-75px;
+}
+#sectiontwo ol { 
+  float:right;
+  width:400px;
+  text-align: left;
+  /* padding-right:20rem; */
+}
+#sectiontwo li {
+  text-align: left;
+  /* padding-right: 200px; */
+}
+#sectiontwo-list{
+  padding: 3rem 15rem 3rem 0;
+}
+#sectionthree ol {
+  columns: 400px 3;
+  text-align: center;
+  padding:0 70px;
+}
+header p, #sectiontwo p, #sectionthree p , #sectionfour p, #sectionfive p{
+width:750px;
+padding:1rem 0;
+}
+#sectiontwo , #sectionthree {
+  line-height: 2rem;
+  min-height: 70vh;
+  padding:3rem 0;
+}
+#sectionfour, #sectionfive{
+  padding:3rem 0;
+}
+#sectionfour ol li{
+  line-height: 6rem;
+  padding: 0 5rem;
+  display: inline-block;
+}
+footer{
+  bottom:0;
+  margin-top:3rem;
+  padding:1rem 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--GrayishBlueBackground);
+}
+#social-icons li{
+  display: inline-block;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+footer li:hover, footer svg:hover {
+  color:var(--StrongCyan);
+  fill:var(--StrongCyan);
+}
+
+#footer-list {
+    columns: 3;
+}
+#footer-list li {
+  cursor: pointer;
+  padding-right: 3rem;
+  text-align: left;
+  line-height: 3rem;
+}
+.logo{
+  font-size: 1rem;
+  width:100px;
+}
+.logo {
+  width:100px;
+  height:75px;
+}
+#social-icons svg > path:hover{
+/* color:var(--StrongCyan); */
+fill:var(--StrongCyan);
+}
+ol, li{
+  padding:0;
+  margin:0;
+  list-style-type: none;
+}
+
+@media screen and (max-width:500px) {
+  header p, #sectiontwo p, #sectionthree p , #sectionfour p, #sectionfive p{
+    width:320px;
+    padding:1rem 0;
+    }
+  h1{
+    font-size: 32px;
+  }
+  p ,  li{
+    font-weight: 16px;
+  }
+
+  .header-content{
+    width:fit-content;
+    padding: 7rem 2rem;
+  }
+  button{
+  margin-bottom: 1rem;
+  width:100%;
+  }
+  #sectiontwo, #sectionthree  , #sectionfive{
+    width:fit-content;
+    padding: 2.5rem  1rem;
+  }
+  .sectiontwo-begin-content{
+    padding-bottom:0;
+  }
+  .leftimg{
+    float:none;
+    margin:0;
+    width:300px;
+  }
+  #sectiontwo ol {
+    float:none;
+    width:320px;
+  }
+  #sectiontwo li {
+    text-align: center;
+    padding:.5rem;
+  }
+  #sectiontwo-list{
+    padding: 3rem 0rem 0rem 0;
+  }
+  #sectionthree ol{
+    columns: 1;
+    padding:0;
+  }
+  #sectionthree li{
+    padding:.7rem 0;
+  }
+  #sectionfour ol li{
+    display: block;
+    padding: 0;
+  }
+  ul{
+    padding:1rem 0px 3rem;
+  }
+  .mobileimage{
+   width:100%;
+   padding:3rem 0;
+  }
+  footer  {
+    display: block;
+    margin-top:5rem;
+    padding: 1rem   2rem;
+  }
+  footer ol li{
+    display: block;
+  }
+  #footer-list li{
+    line-height: 2.5rem;
+    padding-right: 0;
+    text-align: center;
+  }
+  #footer-list{
+    columns: 1;
+    text-align: center;
+  }
+  #social-icons li{
+    padding: 2rem 1rem;
+  }
+}
